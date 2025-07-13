@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* body{
+    min-height: 400vh;
+} */
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+li{
+    list-style: none;
+}
+input,
+button,
+select,
+textarea{
+    outline: none;
+    border: none;
+}
+.container{
+    max-width: 1490px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.title{
+    text-align: center;
+    margin: 60px 0 30px;
+    text-transform: uppercase;
+    font-weight: 520;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+    transition: .25s linear;
+}
+.header.dark{
+    background: #000;
+}
+.navbar{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    color: white;
+}
+.navbar__logo{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.navbar__logo img{
+    width: 60px;
+}
+.navbar__collection{
+    display: flex;
+    gap: 20px;
+}
+.navbar__options{
+    display: flex;
+    gap: 20px;
+}
+.navbar__options i{
+    font-size: 20px;
+}
+.navbar__options select{
+    font-size: 16px;
+    font-weight: 700;
+    background: transparent;
+    color: white;
+}
+
+.language{
+    width: 100px;
+    border-radius: 10px;
+}
+.language option{
+    background-color: rgb(173, 175, 193);
+    color: #211717;
+}
+
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(#000, transparent);
+}
+
+.hero video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news__wrapper{
+    display: flex;
+    gap: 30px;
+    overflow: auto;
+}
+
+.news__wrapper::-webkit-scrollbar{
+height: 0;
+}
+.news__card{
+    min-width: 350px;
+    width: 350px;
+}
+.nesw__card__image{
+    position: relative;
+}
+.nesw__card__image img{
+    border-radius: 50%;
+}
+.nesw__card__image span{
+position: absolute;
+top: 24px;
+left: 24px;
+background: #000;
+color: rgb(247, 241, 241);
+width: 40px;
+height: 40px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+outline: 3px solid rgb(250, 247, 247);
+}
+.news__card__body{
+    text-align: center;
+    margin-top: 20px;
+    color: #444;
+} 
+.news__card__body p{
+    margin: 40px 0 12px;
+    min-height: 50px;
+}
+
+.values__section{
+    margin-top: 100px;
+}
+.values__card img{
+    width: 30%;
+}
+
+.values__wrapper{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.values__title{
+    margin-bottom: 50px;
+}
+
+.values__card{
+    text-align: center;
+    width: 370px;
+}
+
+.values__card span{
+    font-size: 20px;
+    display: inline-block;
+    min-height: 30px;
+    vertical-align: middle;
+}
+
+.values__card p{
+    margin-top: 10px;
+    color: #444;
+} 
+
+
+.info{
+    margin-top: 100px;
+}
+
+
+.info__wrapper{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.info__img{
+    position: relative;
+    width: 50%;
+}
+.info__img img{
+    width: 100%;
+    border-radius: 20px;
+}
+.info__btn{
+    position: absolute;
+    z-index: 5;
+    top: 180px;
+    right: -70px;
+     width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 8px solid white;
+    background-color: rgb(215, 186, 104);
+}
+.info__btn:hover{
+    background-color: rgb(190, 180, 150);
+}
+
+.info__btn span{
+    font-size: 15px;
+    color: white;
+}
+
+.info__title{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    width: 50%;
+    padding-left: 80px;
+    z-index: 1;
+}
+
+.info__title span{
+    font-size: 30px;
+}
+.info__title p{
+    color:#7b7b7b;
+    font-size: 10px;
+    
+}
+.info__title img{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+
+
+
+
+.menyu{
+    margin-top: 130px;
+}
+
+.menyu__wrapper{
+    display: flex;
+    gap: 30px;
+    /* justify-content: center; */
+    margin-top: 50px;
+    /* background-color: #7b7b7b; */
+    overflow: auto;
+}
+.menyu__card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 475px;
+    /* background-color: aqua; */
+    align-items: center;
+}
+.menyu__image{
+    width: 475px;
+    /* background-color: #7b3838; */
+    height: 475px;
+}
+.menyu__image img{
+    width: 100%;
+    height: 100%;
+}
+
+.menyu__card .menyu__image span{
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    top: 38%;
+    left: 34%;
+    font-size: 20px;
+    background-color: rgb(215, 186, 104);
+    border: 7px solid white;
+} 
+.menyu__image a span:hover{
+    background-color: rgb(191, 174, 128);
+}
+
+.menyu__body{
+    text-align: start;
+}
+.menyu__body .menyu__title{
+    font-size: 30px;
+    margin-bottom: -25px;
+}
+.menyu__wrapper::-webkit-scrollbar{
+height: 0;
+}
+
+
+
+/* Footer */
+
+
+.footer{
+    margin-top: 200px;
+    height: 400px;
+   background-color: #2a2222;
+}
+.footer__wrapper{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #7b7b7b; */
+    padding-top: 50px;
+}
+.footer__logo img{
+    width: 170px;
+}
+
+.footer__item{
+    /* background-color: #444; */
+    color: aliceblue;
+}
+.footer__item span{
+    font-size: 20px;
+}
+
+.footer__collektion{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.footer__collektion a:hover{
+    color: rgb(200, 174, 89);
+}
+
+
+
+.footer__icon{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    color: rgb(195, 213, 229);
+    gap: 20px;
+    font-size: 25px;
+}
+.footer__icon__item{
+    display: flex;
+    gap: 18px;
+    font-size: 30px;
+    align-items: center;
+}
+.icon__item img{
+    border-radius: 15px;
+ 
+}
+.footer__icon b:hover{
+    color: rgb(200, 174, 89);
+}
+.footer__icon a:hover{
+    color: rgb(200, 174, 89);
+}
+
+.footer__icon__item i:hover{
+    color: rgb(200, 174, 89);
+}
+.bottom{
+    width: 100%;
+    border: 1px solid rgb(137, 133, 133);
+}
+
+.footer-bottom{
+    margin-top: 15px;
+    display: flex;
+    color: rgb(228, 225, 225);
+    justify-content: space-between;
+}
+.footer-bottom p{
+    font-size: 14px;
+}
+
+
+
